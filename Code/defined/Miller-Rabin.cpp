@@ -1,6 +1,6 @@
 #include "LargeNumber.h"
 
-bool LargeNumber::millerRabinTest(const LargeNumber&, const LargeNumber){
+bool LargeNumber::millerRabinTest(const LargeNumber& n, const LargeNumber& b, int r) {
     // random number generation ramdomly setup
     std::srand(std::time(0));
     // randomly choose an "a" such that 2 <= a <= n-2
